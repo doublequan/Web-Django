@@ -1,0 +1,50 @@
+body {
+    font-family: "Helvetica Neue","Helvetica","Lucida Grande","Arial","Hiragino Sans GB","Microsoft Yahei","WenQuanYi Micro Hei","sans-serif";
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+.navbar-extra {
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+
+.navbar-collapse {
+    font-size: 18px;
+}
+
+.jumbotron {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.site-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.site-header .search {
+    border: 2px solid #EEEEEE;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 0;
+    height: auto;
+    text-align: left;
+}
+
+.site-header .fa {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    color: #eee;
+    font-size: 24px;
+}
+
+.results {
+    /*background-color: #00CC00;*/
+}
