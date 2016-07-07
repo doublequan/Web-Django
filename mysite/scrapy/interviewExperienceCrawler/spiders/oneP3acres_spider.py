@@ -72,6 +72,7 @@ class OneP3acresSpider(scrapy.Spider):
         item['time'] = time
         item['source'] = "1point3acres"
         item['desc'] = desc
+        item['tag'] = ""
         yield item
 
 

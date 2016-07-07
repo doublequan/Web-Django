@@ -16,3 +16,4 @@ class IEItem(scrapy.Item):
     time = scrapy.Field()
     source = scrapy.Field()
     desc = scrapy.Field()
+    tag = scrapy.Field()

@@ -4,6 +4,7 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+    margin-top: 50px;
 }
 
 
@@ -27,7 +28,7 @@ body {
 }
 
 .site-header .search {
-    border: 2px solid #EEEEEE;
+    border: 2px solid #222222;
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 14px;
@@ -46,5 +47,43 @@ body {
 }
 
 .results {
-    /*background-color: #00CC00;*/
+    margin-left: 0px;
+}
+
+.content-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #EEEEEE;
+    padding-left: 0px;
+
+}
+
+.content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 0px;
+}
+
+.content-title {
+    font-size: 18px;
+}
+
+.content-desc {
+}
+
+.content-time {
+    color: #888888;
+}
+
+.content-source {
+    color: #3c763d;
+}
+
+
+em {
+    font-style: normal;
+    color: #cc0000;
 }

@@ -6,25 +6,33 @@ db_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file
 db = sqlite3.connect(db_path + "/db.sqlite3")
 cu = db.cursor()
 
-# #""" Create Table
-# cu.execute('create table IEItems ('
+#""" Create Table
+# cu.execute('create table interviews_items ('
 # #           'id integer,'
-#            'title text, '
-#            'link text UNIQUE PRIMARY KEY,'
+#            'title text NOT NULL ,'
+#            'link text PRIMARY KEY NOT NULL ,'
 #            'time text,'
-#            'source text,'
+#            'source text NOT NULL ,'
+#            'desc text,'
+#            'tag text'
+#            ')'
+#            )
+
+# cu.execute('create table interviews_crawler_source ('
+#            'source text NOT NULL ,'
+#            'link text,'
 #            'desc text'
 #            ')'
 #            )
 
-# #cu.execute("insert into IEItems values("
-#             "0, 'title', 'link1', '0', 'source', 'desc'"
-#             ")")
-# #db.commit()
+cu.execute("insert into interviews_items values("
+            "'title', 'link1', NULL , 'source', 'desc', NULL "
+            ")")
+db.commit()
 
-cu.execute("select * from IEItems WHERE title like '%FB%'")
-rst = cu.fetchall()
-
-print len(rst)
-for i, r in enumerate(rst):
-    print str(i), " ", r
+# cu.execute("select * from IEItems WHERE title like '%FB%'")
+# rst = cu.fetchall()
+#
+# print len(rst)
+# for i, r in enumerate(rst):
+#     print str(i), " ", r

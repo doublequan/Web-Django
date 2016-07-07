@@ -4,3 +4,4 @@ from models import SiteNotice
 # Register your models here.
 
 admin.site.register(SiteNotice)
+

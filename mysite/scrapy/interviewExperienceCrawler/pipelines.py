@@ -22,12 +22,13 @@ class PreProcessingPipeline(object):
         # print item['source']
         # print item['desc']
         cu = self.db.cursor()
-        cu.execute("insert into IEItems values("
+        cu.execute("insert into interviews_items values("
                    "'" + item['title'] + "', '" +
                    item['link'] + "', '" +
                    item['time'] + "', '" +
                    item['source'] + "', '" +
-                   item['desc'] +
+                   item['desc'] + "', '" +
+                   item['tag'] +
                    "')")
         self.db.commit()
         return item
